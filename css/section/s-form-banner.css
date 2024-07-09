@@ -1,0 +1,62 @@
+.gshi-wrapper .container.s-form-banner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gshi-wrapper .s-form-banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .gshi-wrapper .s-docs, .gshi-wrapper .s-form-banner, .gshi-wrapper .s-good-learn, .gshi-wrapper .s-individual, .gshi-wrapper .s-learn, .gshi-wrapper .s-learn-formats, .gshi-wrapper .s-works {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.speedorders {
+    border-radius: 10px;
+    padding: 55px 43px;
+    background: url(../../img/2free.svg) 120% center no-repeat, linear-gradient(180deg, #5787ff 29%, #4edfff 110%);
+    box-shadow: 0px 7px 24px rgb(83 183 255 / 60%);
+    background-size: auto 100%;
+    margin-top: 202px;
+    position: relative;
+    color: white;
+    background-position: 100% 50%;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+}
+
+.header-consultation {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    display: block;
+}
+
+.speedorders p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    width: 502px;
+}
+
+.mdl-textfield {
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+

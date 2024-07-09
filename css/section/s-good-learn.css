@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+.my-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1190px;
+}
+
+.sgl-block {
+    box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .25);
+    background: #fff;
+    border-radius: 40px;
+    padding: 45px 100px 49px;
+}
+
+.def-hdr {
+    margin-bottom: 50px;
+    line-height: 120%;
+    display: block;
+    margin: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    font-family: Mont, sans-serif;
+    margin-bottom: 35px;
+}
+
+.orange {
+    color: #ff8b4a;
+}
+
+.sgl-itm.green {
+    border: 2px solid #25b20d;
+    background: #eeffeb;
+}
+
+.sgl-block .sgl-itm {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 24px;
+    padding-left: 23px;
+}
+
+.sgl-itm.orange {
+    width: 100%;
+}
+
+.sgl-itm.orange::before {
+    width: 188px;
+    height: 218px;
+    background: url(../../img/image.png) no-repeat;
+    position: absolute;
+    right: -10px;
+    top: -3px;
+    content: "";
+}
+
+.sgl-status {
+    border-color: #25b20d;
+}
+
+.sgl-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.sgl-itm.orange {
+    border: 2px solid #ff9503;
+    background: linear-gradient(180deg, rgba(255, 112, 1, .1) 0, rgba(255, 196, 1, .1) 100%);
+}
+
+.orange .sgl-status {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 23px;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    border: 2px solid #000;
+    border-top: 0 solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border-color: #ff9503;
+}
+
+
+.sgl-single__data{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #334662;
+}
+
+.sgl-single__data::after{
+    content: "(8 занятий)";
+    margin-left: 5px;
+    color: #ff9503;
+}
+
+.sgl-two .sgl-itm.orange .sgl-price {
+    color: #ff9503;
+    font-size: 40px;
+    display: block;
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 600;
+    font-family: Mont, sans-serif;
+}
+
+.sgl-block .sgl-two .sgl-itm .sgl-single {
+    display: block;
+    color: #334662;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 50px;
+}
+
+.sgl-block .sgl-two .sgl-itm.orange .sgl-single span {
+    color: #ff9503;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Mont, sans-serif;
+}
+
+
+.sgl-block .sgl-two .sgl-itm .sgl-btn-wrap {
+    text-align: start;
+}
+
+.g-btn.with-arrow.orange {
+    color: #ff7024;
+}
+
+.gshi-wrapper .g-btn.with-arrow {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+}
+
+.g-btn {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    outline: 0;
+    transition: all .5s ease;
+    color: #ff8b4a;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    line-height: 100%;
+    background: #fff;
+    border: 0 solid #000;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .25);
+    border-radius: 82px;
+    padding-left: 37px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 37px;
+    text-decoration: none;
+}
+
+ .gb-arr::after, .gb-arr::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(img_new/btn-arr_white.svg);
+    transition: all .5s ease;
+}
+
+.sgl-price-descr {
+    display: block;
+    color: #334662;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    margin-top: -8px;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 2px;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .gshi-wrapper .sgl-two .sgl-itm.orange::before {
+        background-size: contain;
+        width: 125px;
+        height: 150px;
+        background-repeat: no-repeat;
+        top: 40%;
+        right: 0;
+    }
+}
+/* 
+.gshi-wrapper .sgl-two .sgl-itm.orange::before {
+    width: 178px;
+    height: 211px;
+    background: url(img_new/sgl_2.png);
+    position: absolute;
+    right: 0;
+    top: 7px;
+    content: "";
+} */
