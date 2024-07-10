@@ -29,7 +29,7 @@
                                     <div class="sgl-two 73977">
                                         <div class="sgl-itm orange">
                                             <span class="sgl-status">Индивидуально</span>
-                                            <span class="sgl-price"><span>от</span> 11 200 <span>р</span><span
+                                            <span class="sgl-price">от <span class="sql-price__data">11 200</span> р<span
                                                     class="sgl-single__data">в месяц</span></span>
                                             <span class="sgl-price-descr"></span>
                                             <span class="sgl-single">за 1 занятие — <span>2800
@@ -140,6 +140,34 @@
             </div>
         </div>
     </div>
+
+ <script>
+    // Получаем все ссылки с атрибутом "scroll-to"
+var scrollToLinks = document.querySelectorAll('[scroll-to]');
+
+// Добавляем обработчик клика на каждую ссылку
+scrollToLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+
+    // Получаем элемент, к которому нужно произвести прокрутку
+    var targetSelector = this.getAttribute('scroll-to');
+    var targetElement = document.querySelector(targetSelector);
+
+    if (targetElement) {
+      // Вычисляем смещение элемента относительно верха страницы
+      var targetOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+      // Плавно прокручиваем страницу к целевому элементу
+      window.scrollTo({
+        top: targetOffset,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+    </script>   
 </body>
 
 </html>
