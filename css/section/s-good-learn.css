@@ -289,3 +289,10 @@
         margin-left: 0;
     }
 }
+    
+@media (max-width: 350px) {
+    .gshi-wrapper .sgl-two .sgl-itm.orange::before {
+        width: 115px;
+        height: 140px
+    }
+}
